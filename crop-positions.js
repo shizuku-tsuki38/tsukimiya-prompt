@@ -7,5 +7,7 @@ window.TSUKIMIYA_PUBLIC_CROP_POSITIONS = {
   "あなたのキャラに一番似合うアイスは？": { "x": 50, "y": 17, "scale": 1 },
   "Vtuber風サムネ制作": { "x": 100, "y": 45, "scale": 1 },
   "ポップアップ絵本ステージ": { "x": 50, "y": 14, "scale": 1.42 },
-  "オリジナルネームロゴ": { "x": 85, "y": 50, "scale": 1 }
+  "オリジナルネームロゴ": { "x": 100, "y": 45, "scale": 1 }
 };
+
+window.TSUKIMIYA_PUBLIC_CROP_POSITIONS_MOBILE = window.TSUKIMIYA_PUBLIC_CROP_POSITIONS;
