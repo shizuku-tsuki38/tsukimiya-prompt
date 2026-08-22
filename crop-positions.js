@@ -5,9 +5,13 @@ window.TSUKIMIYA_PUBLIC_CROP_POSITIONS = {
   "アイドル衣装：ソーダスプラッシュ": { "x": 50, "y": 22, "scale": 1 },
   "バーテンダー＋オリジナルカクテル": { "x": 48, "y": 0, "scale": 1 },
   "あなたのキャラに一番似合うアイスは？": { "x": 50, "y": 17, "scale": 1 },
-  "Vtuber風サムネ制作": { "x": 100, "y": 45, "scale": 1 },
+  "Vtuber風サムネ制作": { "x": 60, "y": 0, "scale": 1.4 },
   "ポップアップ絵本ステージ": { "x": 50, "y": 14, "scale": 1.42 },
-  "オリジナルネームロゴ": { "x": 100, "y": 45, "scale": 1 }
+  "オリジナルネームロゴ": { "x": 85, "y": 50, "scale": 1 }
 };
 
-window.TSUKIMIYA_PUBLIC_CROP_POSITIONS_MOBILE = window.TSUKIMIYA_PUBLIC_CROP_POSITIONS;
+window.TSUKIMIYA_PUBLIC_CROP_POSITIONS_MOBILE = {
+  "ガラスアート×露光": { "x": 50, "y": 15, "scale": 1 },
+  "オリジナルネームロゴ": { "x": 85, "y": 50, "scale": 1 },
+  "Vtuber風サムネ制作": { "x": 60, "y": 0, "scale": 1.4 }
+};
