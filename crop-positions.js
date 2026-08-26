@@ -7,11 +7,13 @@ window.TSUKIMIYA_PUBLIC_CROP_POSITIONS = {
   "あなたのキャラに一番似合うアイスは？": { "x": 50, "y": 17, "scale": 1 },
   "Vtuber風サムネ制作": { "x": 60, "y": 0, "scale": 1.4 },
   "ポップアップ絵本ステージ": { "x": 50, "y": 14, "scale": 1.42 },
-  "オリジナルネームロゴ": { "x": 85, "y": 50, "scale": 1 }
+  "オリジナルネームロゴ": { "x": 85, "y": 50, "scale": 1 },
+  "うちの子ピクミン": { "x": 50, "y": 0, "scale": 1 }
 };
 
 window.TSUKIMIYA_PUBLIC_CROP_POSITIONS_MOBILE = {
   "ガラスアート×露光": { "x": 50, "y": 15, "scale": 1 },
   "オリジナルネームロゴ": { "x": 85, "y": 50, "scale": 1 },
-  "Vtuber風サムネ制作": { "x": 60, "y": 0, "scale": 1.4 }
+  "Vtuber風サムネ制作": { "x": 60, "y": 0, "scale": 1.4 },
+  "うちの子ピクミン": { "x": 50, "y": 0, "scale": 1 }
 };
