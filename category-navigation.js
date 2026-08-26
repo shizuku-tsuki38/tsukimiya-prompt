@@ -1,9 +1,9 @@
 /* トップページのカテゴリ案内と、カテゴリ内のプロンプト一覧を管理します。 */
 (function () {
   var groups = [
-    { id: 'new', label: 'NEW', en: 'NEW PROMPTS', description: '新しく追加されたプロンプト', titles: ['Vtuber風サムネ制作', 'あなたのキャラに一番似合うアイスは？', 'ポップアップ絵本ステージ'] },
-    { id: 'diagnosis', label: '診断系プロンプト', en: 'DIAGNOSIS', description: 'キャラクターからぴったりの一杯・一品を導く', titles: ['あなたのキャラに一番似合うアイスは？', 'バーテンダー＋オリジナルカクテル'] },
-    { id: 'game', label: 'ゲーム系プロンプト', en: 'GAME', description: 'ゲームにまつわるプロンプト', titles: [] },
+    { id: 'new', label: 'NEW', en: 'NEW PROMPTS', description: '新しく追加されたプロンプト', titles: ['うちの子ピクミン', 'Vtuber風サムネ制作', 'あなたのキャラに一番似合うアイスは？'] },
+    { id: 'diagnosis', label: '診断系プロンプト', en: 'DIAGNOSIS', description: 'キャラクターからぴったりの一杯・一品を導く', titles: ['うちの子ピクミン', 'あなたのキャラに一番似合うアイスは？', 'バーテンダー＋オリジナルカクテル'] },
+    { id: 'game', label: 'ゲーム系プロンプト', en: 'GAME', description: 'ゲームにまつわるプロンプト', titles: ['うちの子ピクミン'] },
     { id: 'art', label: 'アート系プロンプト', en: 'ART', description: '素材・表現を楽しむアート作品', titles: ['切り絵露光', 'ガラスアート×露光'] },
     { id: 'costume', label: '衣装系プロンプト', en: 'COSTUME', description: 'キャラクターの魅力を引き出す衣装デザイン', titles: ['アイドル衣装：ソーダスプラッシュ'] },
     { id: 'character', label: 'キャラクター系プロンプト', en: 'CHARACTER', description: 'キャラクターの新しい魅力をひらく', titles: ['ねんどろいど化計画', 'Vtuber風サムネ制作', 'ポップアップ絵本ステージ', 'オリジナルネームロゴ'] }
@@ -62,7 +62,7 @@
       return (!model || item.model === model) && (item.title + ' ' + item.tags.join(' ') + ' ' + item.desc).toLowerCase().includes(query);
     });
     document.getElementById('resultCount').textContent = items.length + ' 件のプロンプト';
-    document.getElementById('grid').innerHTML = group.id === 'game'
+    document.getElementById('grid').innerHTML = group.id === 'game' && group.titles.length === 0
       ? '<div class="category-empty"><b>ゲーム系プロンプトは準備中です</b><br>新しいプロンプトを追加すると、ここに表示されます。</div>'
       : (items.map(function (item) { return card(item, data.indexOf(item)); }).join('') || '<div class="category-empty">プロンプトが見つかりませんでした。<br>別のキーワードでお試しください。</div>');
   }
