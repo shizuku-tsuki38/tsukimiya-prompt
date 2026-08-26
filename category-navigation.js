@@ -3,7 +3,7 @@
   var groups = [
     { id: 'new', label: 'NEW', en: 'NEW PROMPTS', description: '新しく追加されたプロンプト', titles: ['うちの子ピクミン', 'Vtuber風サムネ制作', 'あなたのキャラに一番似合うアイスは？'] },
     { id: 'diagnosis', label: '診断系プロンプト', en: 'DIAGNOSIS', description: 'キャラクターからぴったりの一杯・一品を導く', titles: ['うちの子ピクミン', 'あなたのキャラに一番似合うアイスは？', 'バーテンダー＋オリジナルカクテル'] },
-    { id: 'game', label: 'ゲーム系プロンプト', en: 'GAME', description: 'ゲームにまつわるプロンプト', titles: ['うちの子ピクミン'] },
+    { id: 'game', label: 'ゲーム系プロンプト', en: 'GAME', description: 'ゲームにまつわるプロンプト', titles: ['うちの子ピクミン', 'アモアス役職診断'] },
     { id: 'art', label: 'アート系プロンプト', en: 'ART', description: '素材・表現を楽しむアート作品', titles: ['切り絵露光', 'ガラスアート×露光'] },
     { id: 'costume', label: '衣装系プロンプト', en: 'COSTUME', description: 'キャラクターの魅力を引き出す衣装デザイン', titles: ['アイドル衣装：ソーダスプラッシュ'] },
     { id: 'character', label: 'キャラクター系プロンプト', en: 'CHARACTER', description: 'キャラクターの新しい魅力をひらく', titles: ['ねんどろいど化計画', 'Vtuber風サムネ制作', 'ポップアップ絵本ステージ', 'オリジナルネームロゴ'] }
@@ -28,7 +28,7 @@
     <div class="category-menu" id="categoryMenu"></div>\
     <div class="category-detail" id="categoryDetail" hidden>\
       <div class="category-detail-head"><div><div class="eyebrow" style="color:#bd8c34" id="categoryEnglish"></div><h2 id="categoryTitle"></h2></div><button class="category-back" id="categoryBack">← カテゴリ一覧へ戻る</button></div>\
-      <div class="category-tools"><div class="search-row"><input class="input" id="query" type="search" placeholder="このカテゴリ内をキーワードで探す" aria-label="プロンプトを検索"><select class="select" id="model" aria-label="AIモデルで絞り込む"><option value="">すべてのAIモデル</option><option>ChatGPT</option><option>Midjourney</option><option>Stable Diffusion</option><option>Niji・journey</option></select></div></div>\
+      <div class="category-tools"><div class="search-row"><input class="input" id="query" type="search" placeholder="このカテゴリ内をキーワードで探す" aria-label="プロンプトを検索"></div></div>\
       <div class="category-result-line"><span id="resultCount"></span><button class="filter" id="clear">検索をリセット</button></div>\
       <div class="grid" id="grid"></div>\
     </div>';
@@ -57,9 +57,8 @@
     if (!currentGroup) return;
     var group = groupById(currentGroup);
     var query = document.getElementById('query').value.toLowerCase();
-    var model = document.getElementById('model').value;
     var items = promptsFor(group).filter(function (item) {
-      return (!model || item.model === model) && (item.title + ' ' + item.tags.join(' ') + ' ' + item.desc).toLowerCase().includes(query);
+      return (item.title + ' ' + item.tags.join(' ') + ' ' + item.desc).toLowerCase().includes(query);
     });
     document.getElementById('resultCount').textContent = items.length + ' 件のプロンプト';
     document.getElementById('grid').innerHTML = group.id === 'game' && group.titles.length === 0
@@ -74,7 +73,6 @@
     document.getElementById('categoryEnglish').textContent = group.en;
     document.getElementById('categoryTitle').textContent = group.label;
     document.getElementById('query').value = '';
-    document.getElementById('model').value = '';
     renderCategory();
     document.getElementById('categoryDetail').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
@@ -88,8 +86,7 @@
   window.render = renderCategory;
   window.renderFilters = function () {};
   document.getElementById('query').oninput = renderCategory;
-  document.getElementById('model').onchange = renderCategory;
-  document.getElementById('clear').onclick = function () { document.getElementById('query').value = ''; document.getElementById('model').value = ''; renderCategory(); };
+  document.getElementById('clear').onclick = function () { document.getElementById('query').value = ''; renderCategory(); };
   document.getElementById('categoryBack').onclick = showMenu;
   renderMenu();
   renderCategory();
