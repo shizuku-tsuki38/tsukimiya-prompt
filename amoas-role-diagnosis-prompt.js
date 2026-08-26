@@ -8,7 +8,7 @@ data.push({
   cat: 'ゲーム',
   tags: ['アモアス', '役職診断', 'ゲームUI', 'キャラクター診断'],
   klass: 'city',
+  image: 'assets/amoas-role-diagnosis.png',
   desc: 'キャラクター専用スキンのクルーメイトと役職・能力を、ゲームの役職発表画面風に設計するプロンプト。',
   prompt: amoasRolePrompt
 });
-

@@ -38,7 +38,7 @@
   function renderMenu() {
     document.getElementById('categoryMenu').innerHTML = groups.filter(function (group) { return group.id !== 'new'; }).map(function (group) {
       var count = promptsFor(group).length;
-      var status = group.id === 'game' ? '準備中' : count + ' PROMPTS';
+      var status = count === 0 ? '準備中' : count + ' PROMPTS';
       return '<button class="category-tile ' + group.id + '" data-group="' + group.id + '" style="--category-image:url(assets/category-' + group.id + '.webp)"><span class="category-en">' + group.en + '</span><h3>' + group.label + '</h3><p>' + group.description + '</p><span class="category-count">' + status + '</span></button>';
     }).join('');
     document.querySelectorAll('[data-group]').forEach(function (button) { button.onclick = function () { selectGroup(button.dataset.group); }; });
