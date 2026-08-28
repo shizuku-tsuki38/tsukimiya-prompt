@@ -1,8 +1,5 @@
 /* うちの子ドーナツ診断 */
 (function () {
-  var data = window.TSUKIMIYA_PROMPTS;
-  if (!Array.isArray(data)) return;
-
   var item = {
     title: 'うちの子ドーナツ診断',
     model: 'ChatGPT',
