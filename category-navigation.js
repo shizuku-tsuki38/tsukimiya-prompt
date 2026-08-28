@@ -1,8 +1,8 @@
 /* トップページのカテゴリ案内と、カテゴリ内のプロンプト一覧を管理します。 */
 (function () {
   var groups = [
-    { id: 'new', label: 'NEW', en: 'NEW PROMPTS', description: '新しく追加されたプロンプト', titles: ['うちの子ピクミン', 'Vtuber風サムネ制作', 'あなたのキャラに一番似合うアイスは？'] },
-    { id: 'diagnosis', label: '診断系プロンプト', en: 'DIAGNOSIS', description: 'キャラクターからぴったりの一杯・一品を導く', titles: ['うちの子ピクミン', 'あなたのキャラに一番似合うアイスは？', 'バーテンダー＋オリジナルカクテル'] },
+    { id: 'new', label: 'NEW', en: 'NEW PROMPTS', description: '新しく追加されたプロンプト', titles: ['うちの子ドーナツ診断', 'うちの子ピクミン', 'Vtuber風サムネ制作'] },
+    { id: 'diagnosis', label: '診断系プロンプト', en: 'DIAGNOSIS', description: 'キャラクターからぴったりの一杯・一品を導く', titles: ['うちの子ドーナツ診断', 'うちの子ピクミン', 'あなたのキャラに一番似合うアイスは？', 'バーテンダー＋オリジナルカクテル'] },
     { id: 'game', label: 'ゲーム系プロンプト', en: 'GAME', description: 'ゲームにまつわるプロンプト', titles: ['うちの子ピクミン', 'アモアス役職診断'] },
     { id: 'art', label: 'アート系プロンプト', en: 'ART', description: '素材・表現を楽しむアート作品', titles: ['切り絵露光', 'ガラスアート×露光'] },
     { id: 'costume', label: '衣装系プロンプト', en: 'COSTUME', description: 'キャラクターの魅力を引き出す衣装デザイン', titles: ['アイドル衣装：ソーダスプラッシュ'] },
