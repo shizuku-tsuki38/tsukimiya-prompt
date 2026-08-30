@@ -9,7 +9,9 @@ window.TSUKIMIYA_PUBLIC_CROP_POSITIONS = {
   "ポップアップ絵本ステージ": { "x": 50, "y": 14, "scale": 1.42 },
   "オリジナルネームロゴ": { "x": 85, "y": 50, "scale": 1 },
   "うちの子ピクミン": { "x": 50, "y": 0, "scale": 1 },
-  "うちの子ドーナツ診断": { "x": 50, "y": 0, "scale": 1 }
+  "うちの子ドーナツ診断": { "x": 50, "y": 0, "scale": 1 },
+  "墨絵+露光": { "x": 50, "y": 0, "scale": 1 },
+  "ポケカ風TCG化": { "x": 50, "y": 0, "scale": 1 }
 };
 
 window.TSUKIMIYA_PUBLIC_CROP_POSITIONS_MOBILE = {

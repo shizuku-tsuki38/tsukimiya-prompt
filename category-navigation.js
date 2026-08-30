@@ -1,12 +1,12 @@
 /* トップページのカテゴリ案内と、カテゴリ内のプロンプト一覧を管理します。 */
 (function () {
   var groups = [
-    { id: 'new', label: 'NEW', en: 'NEW PROMPTS', description: '新しく追加されたプロンプト', titles: ['うちの子ドーナツ診断', 'うちの子ピクミン', 'Vtuber風サムネ制作'] },
+    { id: 'new', label: 'NEW', en: 'NEW PROMPTS', description: '新しく追加されたプロンプト', titles: ['墨絵+露光', 'うちの子ドーナツ診断', 'うちの子ピクミン'] },
     { id: 'diagnosis', label: '診断系プロンプト', en: 'DIAGNOSIS', description: 'キャラクターからぴったりの一杯・一品を導く', titles: ['うちの子ドーナツ診断', 'うちの子ピクミン', 'あなたのキャラに一番似合うアイスは？', 'バーテンダー＋オリジナルカクテル'] },
-    { id: 'game', label: 'ゲーム系プロンプト', en: 'GAME', description: 'ゲームにまつわるプロンプト', titles: ['うちの子ピクミン', 'アモアス役職診断'] },
-    { id: 'art', label: 'アート系プロンプト', en: 'ART', description: '素材・表現を楽しむアート作品', titles: ['切り絵露光', 'ガラスアート×露光'] },
+    { id: 'game', label: 'ゲーム系プロンプト', en: 'GAME', description: 'ゲームにまつわるプロンプト', titles: ['ポケカ風TCG化', 'うちの子ピクミン', 'アモアス役職診断'] },
+    { id: 'art', label: 'アート系プロンプト', en: 'ART', description: '素材・表現を楽しむアート作品', titles: ['墨絵+露光', '切り絵露光', 'ガラスアート×露光'] },
     { id: 'costume', label: '衣装系プロンプト', en: 'COSTUME', description: 'キャラクターの魅力を引き出す衣装デザイン', titles: ['アイドル衣装：ソーダスプラッシュ'] },
-    { id: 'character', label: 'キャラクター系プロンプト', en: 'CHARACTER', description: 'キャラクターの新しい魅力をひらく', titles: ['ねんどろいど化計画', 'Vtuber風サムネ制作', 'ポップアップ絵本ステージ', 'オリジナルネームロゴ'] }
+    { id: 'character', label: 'キャラクター系プロンプト', en: 'CHARACTER', description: 'キャラクターの新しい魅力をひらく', titles: ['ポケカ風TCG化', 'ねんどろいど化計画', 'Vtuber風サムネ制作', 'ポップアップ絵本ステージ', 'オリジナルネームロゴ'] }
   ];
 
   var currentGroup = null;
