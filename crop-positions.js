@@ -14,7 +14,8 @@ window.TSUKIMIYA_PUBLIC_CROP_POSITIONS = {
   "ポケカ風TCG化": { "x": 50, "y": 0, "scale": 1 },
   "うちの子スマブラ参戦": { "x": 50, "y": 0, "scale": 1 },
   "君の匂いが残る朝": { "x": 50, "y": 50, "scale": 1 },
-  "キーブレード継承": { "x": 50, "y": 50, "scale": 1 }
+  "キーブレード継承": { "x": 50, "y": 50, "scale": 1 },
+  "うちのこ一番くじ": { "x": 50, "y": 50, "scale": 1 }
 };
 
 window.TSUKIMIYA_PUBLIC_CROP_POSITIONS_MOBILE = {

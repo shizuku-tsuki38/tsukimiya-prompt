@@ -2,7 +2,7 @@
 (function () {
   var groups = [
     { id: 'new', label: 'NEW', en: 'NEW PROMPTS', description: '新しく追加されたプロンプト', titles: ['キーブレード継承', '君の匂いが残る朝', 'うちの子スマブラ参戦'] },
-    { id: 'diagnosis', label: '診断系プロンプト', en: 'DIAGNOSIS', description: 'キャラクターからぴったりの一杯・一品を導く', titles: ['うちの子ドーナツ診断', 'うちの子ピクミン', 'あなたのキャラに一番似合うアイスは？', 'バーテンダー＋オリジナルカクテル'] },
+    { id: 'diagnosis', label: '診断系プロンプト', en: 'DIAGNOSIS', description: 'キャラクターからぴったりの一杯・一品を導く', titles: ['うちのこ一番くじ', 'うちの子ドーナツ診断', 'うちの子ピクミン', 'あなたのキャラに一番似合うアイスは？', 'バーテンダー＋オリジナルカクテル'] },
     { id: 'dokidoki', label: 'ドキドキ系プロンプト', en: 'HEART FLUTTER', description: '距離が近づく、心ときめくシチュエーション', titles: [] },
     { id: 'game', label: 'ゲーム系プロンプト', en: 'GAME', description: 'ゲームにまつわるプロンプト', titles: ['キーブレード継承', 'うちの子スマブラ参戦', 'ポケカ風TCG化', 'うちの子ピクミン', 'アモアス役職診断'] },
     { id: 'art', label: 'アート系プロンプト', en: 'ART', description: '素材・表現を楽しむアート作品', titles: ['墨絵+露光', '切り絵露光', 'ガラスアート×露光'] },
