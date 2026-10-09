@@ -16,7 +16,8 @@ window.TSUKIMIYA_PUBLIC_CROP_POSITIONS = {
   "君の匂いが残る朝": { "x": 50, "y": 50, "scale": 1 },
   "キーブレード継承": { "x": 50, "y": 50, "scale": 1 },
   "うちのこ一番くじ": { "x": 50, "y": 50, "scale": 1 },
-  "誘惑の契約印": { "x": 50, "y": 50, "scale": 1 }
+  "誘惑の契約印": { "x": 50, "y": 50, "scale": 1 },
+  "うちの子怪異化": { "x": 50, "y": 50, "scale": 1 }
 };
 
 window.TSUKIMIYA_PUBLIC_CROP_POSITIONS_MOBILE = {
