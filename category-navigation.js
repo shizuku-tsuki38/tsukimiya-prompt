@@ -6,7 +6,7 @@
     { id: 'dokidoki', label: 'ドキドキ系プロンプト', en: 'HEART FLUTTER', description: '距離が近づく、心ときめくシチュエーション', titles: ['誘惑の契約印', 'うちの子じょじになりました'] },
     { id: 'game', label: 'アニメ・ゲーム系プロンプト', en: 'ANIME & GAME', description: 'アニメやゲームの世界観を楽しむプロンプト', titles: ['うちの子怪異化', 'キーブレード継承', 'うちの子スマブラ参戦', 'ポケカ風TCG化', 'うちの子ピクミン', 'アモアス役職診断'] },
     { id: 'art', label: 'アート系プロンプト', en: 'ART', description: '素材・表現を楽しむアート作品', titles: ['墨絵+露光', '切り絵露光', 'ガラスアート×露光'] },
-    { id: 'costume', label: '衣装系プロンプト', en: 'COSTUME', description: 'キャラクターの魅力を引き出す衣装デザイン', titles: ['アイドル衣装：ソーダスプラッシュ'] },
+    { id: 'costume', label: '衣装系プロンプト', en: 'COSTUME', description: 'キャラクターの魅力を引き出す衣装デザイン', titles: ['アイドル衣装：ソーダスプラッシュ', 'てるてるレインコート'] },
     { id: 'character', label: 'キャラクター系プロンプト', en: 'CHARACTER', description: 'キャラクターの新しい魅力をひらく', titles: ['君の匂いが残る朝', 'ポケカ風TCG化', 'ねんどろいど化計画', 'Vtuber風サムネ制作', 'ポップアップ絵本ステージ', 'オリジナルネームロゴ'] }
   ];
 
@@ -98,5 +98,8 @@
   var jojiScript = document.createElement('script');
   jojiScript.src = 'uchinoko-joji-prompt.js';
   document.body.appendChild(jojiScript);
+  var raincoatScript = document.createElement('script');
+  raincoatScript.src = 'teruteru-raincoat-prompt.js';
+  document.body.appendChild(raincoatScript);
   renderCategory();
 })();
